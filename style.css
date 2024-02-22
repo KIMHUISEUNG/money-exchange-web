@@ -1,0 +1,120 @@
+/* main*/
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+main h1 {
+  margin: 0px 12px;
+}
+
+figure {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+
+  opacity: 80%;
+  background-image: url("/src/money.png");
+}
+
+.background-picture {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+}
+/* sections box*/
+.sections-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+
+  padding: 30px;
+  border: 1px solid rgb(0 69 5);
+  background-color: #fcfcfc;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content img {
+  display: inline;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+/* section main box*/
+.exchange-box {
+  border: 1px solid black;
+  width: 300px;
+}
+
+.input-area {
+  width: 100%;
+}
+
+.input-area input {
+  width: 98%;
+}
+
+.flag-img {
+  width: 18px;
+  height: 12px;
+}
+
+.korean-num {
+  text-align: end;
+  padding: 0 8px;
+  margin: 2px;
+  font-size: 12px;
+}

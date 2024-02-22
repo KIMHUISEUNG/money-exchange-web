@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exchange</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <figure class="background-picture"></figure>
+      <div class="sections-box">
+        <section class="exchange-box">
+          <div class="dropdown">
+            <button onclick="fromMyFunction()" class="dropbtn" id="from-button">
+              USD
+            </button>
+            <div id="from-currency-list" class="dropdown-content">
+              <a id="USD" href="#">
+                <img
+                  class="flag-img"
+                  src="https://cdn-icons-png.flaticon.com/512/555/555526.png"
+                />
+                USD</a
+              >
+              <a id="KRW" href="#">
+                <img
+                  class="flag-img"
+                  src="	https://cdn.countryflags.com/thumbs/south-korea/flag-400.png"
+                />
+                KRW</a
+              >
+              <a id="VND" href="#"
+                ><img
+                  class="flag-img"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/2560px-Flag_of_Vietnam.svg.png"
+                />
+                VND</a
+              >
+            </div>
+            <div class="input-area">
+              <input
+                type="numbe"
+                id="from-input"
+                onkeyup="convert('from')"
+                placeholder="금액을 입력하세요."
+              />
+              <div id="fromNumToKorea" class="korean-num">달러</div>
+            </div>
+          </div>
+        </section>
+        <h1>=</h1>
+        <section class="exchange-box">
+          <div class="dropdown">
+            <button onclick="toMyFunction()" class="dropbtn" id="to-button">
+              USD
+            </button>
+            <div id="to-currency-list" class="dropdown-content">
+              <a id="USD" href="#">
+                <img
+                  class="flag-img"
+                  src="https://cdn-icons-png.flaticon.com/512/555/555526.png"
+                />
+                USD</a
+              >
+              <a id="KRW" href="#">
+                <img
+                  class="flag-img"
+                  src="	https://cdn.countryflags.com/thumbs/south-korea/flag-400.png"
+                />
+                KRW</a
+              >
+              <a id="VND" href="#"
+                ><img
+                  class="flag-img"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/2560px-Flag_of_Vietnam.svg.png"
+                />
+                VND</a
+              >
+            </div>
+            <div class="input-area">
+              <input
+                type="numbe"
+                id="to-input"
+                onkeyup="convert('to')"
+                placeholder="금액을 입력하세요."
+              />
+              <div id="toNumToKorea" class="korean-num">달러</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
